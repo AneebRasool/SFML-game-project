@@ -5,7 +5,7 @@
 #include<SFML/Audio.hpp>
 #include<SFML/Network.hpp>
 
-//using namespace sf (namespace) but here we wont. also test test test
+//using namespace sf (namespace) but here we wont.
 using namespace std;
 //test!
 
