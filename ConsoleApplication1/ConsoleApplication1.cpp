@@ -15,7 +15,7 @@ int main()
     
     
     //Videomode has 
-    sf::RenderWindow window(sf::VideoMode(1920, 1080), "My first game", sf::Style::Titlebar | sf::Style::Close);
+    sf::RenderWindow window(sf::VideoMode(800, 600), "My first game", sf::Style::Titlebar | sf::Style::Close);
     sf::Event ev; //ex event if u press a button, it will find and capture the event in this!
 
 
