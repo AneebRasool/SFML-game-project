@@ -1,9 +1,5 @@
 #include<iostream>
-#include<SFML/Graphics.hpp>
-#include<SFML/System.hpp>
-#include<SFML/Window.hpp>
-#include<SFML/Audio.hpp>
-#include<SFML/Network.hpp>
+#include "game.h"
 
 //using namespace sf (namespace) but here we wont.
 using namespace std;
@@ -15,7 +11,7 @@ int main()
     
     
     //Videomode has 
-    sf::RenderWindow window(sf::VideoMode(800, 600), "My first game", sf::Style::Titlebar | sf::Style::Close);
+    sf::RenderWindow window(sf::VideoMode(800, 600), "game 1", sf::Style::Titlebar | sf::Style::Close);
     sf::Event ev; //ex event if u press a button, it will find and capture the event in this!
 
 
