@@ -7,44 +7,23 @@ using namespace std;
 
 int main()
 {
-    //window:
-    
-    
-    //Videomode has 
-    sf::RenderWindow window(sf::VideoMode(800, 600), "game 1", sf::Style::Titlebar | sf::Style::Close);
-    sf::Event ev; //ex event if u press a button, it will find and capture the event in this!
 
+    //init game engine
+
+    Game game;
 
     //game loop
-    while (window.isOpen()) {
-
-        //event polling
-        while (window.pollEvent(ev)) { //while we get events from window, save to event variable!
-
-            switch (ev.type) {
-
-            //window close
-            case sf::Event::Closed: window.close(); break;
-
-            case sf::Event::KeyPressed: if (ev.key.code == sf::Keyboard::Escape) {
-                window.close(); break;
-            } 
-
-            
-            }
-            //update
-            
+    while (game.running()) {
 
 
-            //render
-            window.clear(sf::Color::Blue); //clear old frame
-
-            //draw your game
-            window.display(); //tell app that window is done drawing
+        //update
+        game.update();
 
 
+        //render
+        game.render();
         }
-    }
+    
 
     //end of application
     return 0;

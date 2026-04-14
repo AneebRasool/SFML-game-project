@@ -34,7 +34,15 @@ public:
 	Game();
 	virtual ~Game();
 
+
+	//accessors
+	const bool running() const;
+
+
+
+	
 	//functions
+	void pollEvents();
 	void update();
 	void render();
 };
