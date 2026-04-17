@@ -1,6 +1,6 @@
 #include "game.h"
 
-//private functions
+//private functions (sync, friday april 17)
 void Game::initvariables()
 {
 	this->window = nullptr;
