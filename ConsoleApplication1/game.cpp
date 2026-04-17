@@ -1,6 +1,6 @@
 #include "game.h"
 
-//private functions (sync, friday april 17)
+//private functions (sync, friday april 17) test (dns)
 void Game::initvariables()
 {
 	this->window = nullptr;
